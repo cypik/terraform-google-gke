@@ -24,7 +24,7 @@ module "gke" {
   region             = "asia-northeast1"
   image_type         = "UBUNTU_CONTAINERD"
   location           = "asia-northeast1"
-  min_master_version = "1.27.3-gke.100"
+  min_master_version = "1.27.8-gke.1067004"
   network            = module.vpc.vpc_id
   subnetwork         = module.subnet.subnet_id
   service_account    = module.service-account.account_email
